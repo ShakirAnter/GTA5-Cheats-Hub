@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "GTA 5 Cheats Hub",
+    "slug": "GTA5-Cheats-Hub",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/gta5-logo-transparent.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#fff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
