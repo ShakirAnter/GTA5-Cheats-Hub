@@ -5,43 +5,41 @@ import {
   StyleSheet,
   Button,
   ActivityIndicator,
+  Platform,
 } from "react-native";
 import Colors from "../constants/Colors";
 
-import AsyncStorage from "@react-native-async-storage/async-storage";
-
-import {
-  storeData,
-  getData,
-  removeData,
-  clearAll,
-} from "../constants/dataManipulation";
+import { SafeAreaView } from "react-native";
+import PlatformSelector from "../components/PlatformSelector";
 
 const HomeScreen = ({ navigation }) => {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Home Screen</Text>
-      <Button
-        title="View Cheats"
-        onPress={() => navigation.navigate("Cheats")}
-        color={Colors.primary}
-      />
-    </View>
+    <SafeAreaView style={styles.container}>
+      <View style={styles.platformSelectorContainer}>
+        <Text style={styles.title}>Platform Selector</Text>
+
+        <View style={styles.platformsSelectors}>
+          <PlatformSelector img="ps" platformName="Playstation" />
+          <PlatformSelector img="xbox" platformName="XBox" />
+          <PlatformSelector img="pc" platformName="PC" />
+        </View>
+      </View>
+    </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
     backgroundColor: Colors.background,
+    padding: 15,
   },
   title: {
     fontSize: 24,
     color: Colors.text,
     marginBottom: 20,
   },
+  platformSelectorContainer: {},
 });
 
 export default HomeScreen;

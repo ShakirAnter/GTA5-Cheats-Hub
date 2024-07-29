@@ -2,6 +2,7 @@
 import * as React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
+import WelcomeScreen from "../screens/WelcomeScreen";
 import HomeScreen from "../screens/HomeScreen";
 import CheatsScreen from "../screens/CheatsScreen";
 
@@ -17,7 +18,9 @@ export default function TabNavigator() {
       screenOptions={({ route }) => ({
         tabBarIcon: ({ color, size }) => {
           let iconName;
-          if (route.name === "Home") {
+          if (route.name === "Welcome") {
+            iconName = "book";
+          } else if (route.name === "Home") {
             iconName = "home-outline";
           } else if (route.name === "Cheats") {
             iconName = "book";
@@ -31,6 +34,7 @@ export default function TabNavigator() {
       }}
     >
       <Tab.Screen name="Home" component={HomeScreen} />
+      <Tab.Screen name="Welcome" component={WelcomeScreen} />
       <Tab.Screen name="Cheats" component={CheatsScreen} />
     </Tab.Navigator>
   );

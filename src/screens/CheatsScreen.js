@@ -3,9 +3,7 @@ import { View, StyleSheet, Button } from "react-native";
 import CheatCodeList from "../components/CheatCodeList";
 import PlatformSelector from "../components/PlatformSelector";
 import Colors from "../constants/Colors";
-
-// expo install @react-navigation/native @react-navigation/stack
-// expo install react-native-screens react-native-safe-area-context
+import { SafeAreaView } from "react-native-safe-area-context";
 
 const CheatsScreen = ({ navigation }) => {
   const [selectedPlatform, setSelectedPlatform] = useState("PS3");
@@ -18,10 +16,10 @@ const CheatsScreen = ({ navigation }) => {
   };
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <PlatformSelector onSelectPlatform={setSelectedPlatform} />
       <CheatCodeList cheatCodes={cheatCodes[selectedPlatform]} />
-    </View>
+    </SafeAreaView>
   );
 };
 
