@@ -13,10 +13,10 @@ import Colors from "../constants/Colors";
 
 import { images } from "../constants/images";
 
-const PlatformSelector = ({ img, platformName }) => {
+const PlatformSelector = ({ img, platformName, onPress }) => {
   return (
     <>
-      <TouchableNativeFeedback onPress={() => console.log("Hello World")}>
+      <TouchableNativeFeedback onPress={onPress}>
         <View style={styles.platform}>
           <Image style={styles.img} source={images[img]} />
           <Text style={styles.platformName}>{platformName}</Text>

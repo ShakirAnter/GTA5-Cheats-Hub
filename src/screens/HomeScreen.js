@@ -19,9 +19,30 @@ const HomeScreen = ({ navigation }) => {
         <Text style={styles.title}>Platform Selector</Text>
 
         <View style={styles.platformsSelectors}>
-          <PlatformSelector img="ps" platformName="Playstation" />
-          <PlatformSelector img="xbox" platformName="XBox" />
-          <PlatformSelector img="pc" platformName="PC" />
+          <PlatformSelector
+            img="ps"
+            platformName="Playstation"
+            onPress={() =>
+              navigation.navigate("Cheats", {
+                platform: "Playstation",
+                game: "GTA5",
+              })
+            }
+          />
+          <PlatformSelector
+            img="xbox"
+            platformName="Xbox"
+            onPress={() =>
+              navigation.navigate("Cheats", { platform: "Xbox", game: "GTA5" })
+            }
+          />
+          <PlatformSelector
+            img="pc"
+            platformName="PC"
+            onPress={() =>
+              navigation.navigate("Cheats", { platform: "PC", game: "GTA5" })
+            }
+          />
         </View>
       </View>
     </SafeAreaView>

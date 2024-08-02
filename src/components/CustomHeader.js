@@ -44,11 +44,11 @@ const styles = StyleSheet.create({
     alignItems: "center",
     padding: 15,
     paddingTop: 50,
-    backgroundColor: "#1c1a1a",
+    backgroundColor: Colors.primary,
   },
   headerTitle: {
     fontSize: 20,
-    color: Colors.primary,
+    color: Colors.text,
   },
   iconsContainer: {
     flexDirection: "row",

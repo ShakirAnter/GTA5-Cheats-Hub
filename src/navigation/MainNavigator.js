@@ -11,6 +11,7 @@ import SettingsScreen from "../screens/SettingsScreen";
 import Icon from "react-native-vector-icons/Ionicons";
 import Colors from "../constants/Colors";
 import CustomHeader from "../components/CustomHeader";
+import PlatformCheatsStack from "./PlatformCheatsStack";
 
 const Tab = createBottomTabNavigator();
 
@@ -32,22 +33,22 @@ const MainNavigator = () => {
           return <Icon name={iconName} size={size} color={color} />;
         },
         tabBarStyle: {
-          backgroundColor: "#1c1a1a",
+          backgroundColor: Colors.primary,
           borderTopWidth: 0,
           height: 60,
           paddingBottom: 10,
-          paddingTop: 10
+          paddingTop: 10,
         },
-        tabBarActiveTintColor: Colors.primary,
-        tabBarInactiveTintColor: "gray",
-        headerShown: true,
+        tabBarActiveTintColor: Colors.text,
+        tabBarInactiveTintColor: "black",
+        headerShown: false,
         // tabBarShowLabel: false,
       })}
     >
       <Tab.Screen
         name="Home"
-        component={HomeScreen}
-        options={{ header: () => <CustomHeader /> }}
+        component={PlatformCheatsStack}
+        // options={{ header: () => <CustomHeader /> }}
       />
       <Tab.Screen
         name="Favorites"

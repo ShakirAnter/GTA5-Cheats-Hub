@@ -1,0 +1,649 @@
+{
+  "platforms": {
+    "Playstation": {
+      "GTA5": [
+        {
+          "category": "Player",
+          "name": "Invincibility",
+          "description": "Activate to become invulnerable to all damage for 5 minutes.",
+          "code": "RIGHT, X, RIGHT, LEFT, RIGHT, R1, RIGHT, LEFT, X, TRIANGLE",
+          "type": "button"
+        },
+        {
+          "category": "Player",
+          "name": "Max Health and Armor",
+          "description": "Instantly restores your health and armor to maximum levels.",
+          "code": "CIRCLE, L1, TRIANGLE, R2, X, SQUARE, CIRCLE, RIGHT, SQUARE, L1, L1, L1",
+          "type": "button"
+        },
+        {
+          "category": "Player",
+          "name": "Super Jump",
+          "description": "Enable high jumping ability.",
+          "code": "LEFT, LEFT, TRIANGLE, TRIANGLE, RIGHT, RIGHT, LEFT, RIGHT, SQUARE, R1, R2",
+          "type": "button"
+        },
+        {
+          "category": "World",
+          "name": "Moon Gravity",
+          "description": "Experience low gravity physics.",
+          "code": "LEFT, LEFT, L1, R1, L1, RIGHT, LEFT, L1, LEFT",
+          "type": "button"
+        },
+        {
+          "category": "World",
+          "name": "Raise Wanted Level",
+          "description": "Increase your wanted level by one star.",
+          "code": "R1, R1, CIRCLE, R2, LEFT, RIGHT, LEFT, RIGHT, LEFT, RIGHT",
+          "type": "button"
+        },
+        {
+          "category": "World",
+          "name": "Lower Wanted Level",
+          "description": "Decrease your wanted level by one star.",
+          "code": "R1, R1, CIRCLE, R2, RIGHT, LEFT, RIGHT, LEFT, RIGHT, LEFT",
+          "type": "button"
+        },
+        {
+          "category": "Player",
+          "name": "Fast Run",
+          "description": "Run faster than normal.",
+          "code": "TRIANGLE, LEFT, RIGHT, RIGHT, L2, L1, SQUARE",
+          "type": "button"
+        },
+        {
+          "category": "Player",
+          "name": "Fast Swim",
+          "description": "Swim faster than normal.",
+          "code": "LEFT, LEFT, L1, RIGHT, RIGHT, R2, LEFT, L2, RIGHT",
+          "type": "button"
+        },
+        {
+          "category": "Player",
+          "name": "Recharge Ability",
+          "description": "Instantly refill your special ability meter.",
+          "code": "X, X, SQUARE, R1, L1, X, RIGHT, LEFT, X",
+          "type": "button"
+        },
+        {
+          "category": "Player",
+          "name": "Give Parachute",
+          "description": "Get a parachute if you don't have one.",
+          "code": "LEFT, RIGHT, L1, L2, R1, R2, R2, LEFT, LEFT, RIGHT, L1",
+          "type": "button"
+        },
+        {
+          "category": "World",
+          "name": "Skyfall",
+          "description": "Spawn mid-air and freefall to the ground.",
+          "code": "L1, L2, R1, R2, LEFT, RIGHT, LEFT, RIGHT, L1, L2, R1, R2, LEFT, RIGHT, LEFT, RIGHT",
+          "type": "button"
+        },
+        {
+          "category": "Player",
+          "name": "Explosive Melee Attacks",
+          "description": "Make melee attacks explosive.",
+          "code": "RIGHT, LEFT, X, TRIANGLE, R1, CIRCLE, CIRCLE, CIRCLE, L2",
+          "type": "button"
+        },
+        {
+          "category": "Player",
+          "name": "Bang Bang (Explosive Bullets)",
+          "description": "Make your bullets explosive.",
+          "code": "RIGHT, SQUARE, X, LEFT, R1, R2, LEFT, RIGHT, RIGHT, L1, L1, L1",
+          "type": "button"
+        },
+        {
+          "category": "Player",
+          "name": "Flaming Bullets",
+          "description": "Make your bullets set things on fire.",
+          "code": "L1, R1, SQUARE, R1, LEFT, R2, R1, LEFT, SQUARE, RIGHT, L1, L1",
+          "type": "button"
+        },
+        {
+          "category": "Player",
+          "name": "Slow Motion Aim",
+          "description": "Slow down time when aiming.",
+          "code": "SQUARE, L2, R1, TRIANGLE, LEFT, SQUARE, L2, RIGHT, X",
+          "type": "button"
+        },
+        {
+          "category": "Player",
+          "name": "Drunk Mode",
+          "description": "Make your character drunk.",
+          "code": "TRIANGLE, RIGHT, RIGHT, LEFT, RIGHT, SQUARE, CIRCLE, LEFT",
+          "type": "button"
+        },
+        {
+          "category": "World",
+          "name": "Change Weather",
+          "description": "Cycle through different weather types.",
+          "code": "R2, X, L1, L1, L2, L2, L2, SQUARE",
+          "type": "button"
+        },
+        {
+          "category": "World",
+          "name": "Slidey Cars",
+          "description": "Reduce car traction.",
+          "code": "TRIANGLE, R1, R1, LEFT, R1, L1, R2, L1",
+          "type": "button"
+        },
+        {
+          "category": "World",
+          "name": "Slow Motion",
+          "description": "Slow down game speed.",
+          "code": "TRIANGLE, LEFT, RIGHT, RIGHT, SQUARE, R2, R1",
+          "type": "button"
+        },
+        {
+          "category": "Vehicles",
+          "name": "Spawn Buzzard Attack Helicopter",
+          "description": "Spawn a Buzzard attack helicopter.",
+          "code": "CIRCLE, CIRCLE, L1, CIRCLE, CIRCLE, CIRCLE, L1, L2, R1, TRIANGLE, CIRCLE, TRIANGLE",
+          "type": "button"
+        },
+        {
+          "category": "Vehicles",
+          "name": "Spawn Comet",
+          "description": "Spawn a Comet sports car.",
+          "code": "R1, CIRCLE, R2, RIGHT, L1, L2, X, X, SQUARE, R1",
+          "type": "button"
+        },
+        {
+          "category": "Vehicles",
+          "name": "Spawn Sanchez",
+          "description": "Spawn a Sanchez dirt bike.",
+          "code": "CIRCLE, X, L1, CIRCLE, CIRCLE, L1, CIRCLE, R1, R2, L2, L1, L1",
+          "type": "button"
+        },
+        {
+          "category": "Vehicles",
+          "name": "Spawn Trashmaster",
+          "description": "Spawn a Trashmaster garbage truck.",
+          "code": "CIRCLE, R1, CIRCLE, R1, LEFT, LEFT, R1, L1, CIRCLE, RIGHT",
+          "type": "button"
+        },
+        {
+          "category": "Vehicles",
+          "name": "Spawn Limo",
+          "description": "Spawn a limousine.",
+          "code": "R2, RIGHT, L2, LEFT, LEFT, R1, L1, CIRCLE, RIGHT",
+          "type": "button"
+        },
+        {
+          "category": "Vehicles",
+          "name": "Spawn Stunt Plane",
+          "description": "Spawn a Stunt Plane.",
+          "code": "CIRCLE, RIGHT, L1, L2, LEFT, R1, L1, L1, LEFT, LEFT, X, TRIANGLE",
+          "type": "button"
+        },
+        {
+          "category": "Vehicles",
+          "name": "Spawn Caddy",
+          "description": "Spawn a golf cart (Caddy).",
+          "code": "CIRCLE, L1, LEFT, R1, L2, X, R1, L1, CIRCLE, X",
+          "type": "button"
+        },
+        {
+          "category": "Vehicles",
+          "name": "Spawn Rapid GT",
+          "description": "Spawn a Rapid GT sports car.",
+          "code": "R2, L1, CIRCLE, RIGHT, L1, R1, RIGHT, LEFT, CIRCLE, R2",
+          "type": "button"
+        },
+        {
+          "category": "Vehicles",
+          "name": "Spawn Duster",
+          "description": "Spawn a crop duster plane.",
+          "code": "RIGHT, LEFT, R1, R1, R1, LEFT, TRIANGLE, TRIANGLE, X, CIRCLE, L1, L1",
+          "type": "button"
+        },
+        {
+          "category": "Vehicles",
+          "name": "Spawn PCJ-600 Motorcycle",
+          "description": "Spawn a PCJ-600 motorcycle.",
+          "code": "R1, RIGHT, LEFT, RIGHT, R2, LEFT, RIGHT, SQUARE, RIGHT, L2, L1, L1",
+          "type": "button"
+        },
+        {
+          "category": "Vehicles",
+          "name": "Spawn BMX",
+          "description": "Spawn a BMX bike.",
+          "code": "LEFT, LEFT, RIGHT, RIGHT, LEFT, RIGHT, SQUARE, CIRCLE, TRIANGLE, R1, R2",
+          "type": "button"
+        }
+      ],
+      "RedDeadRedemption2": []
+    },
+    "Xbox": {
+      "GTA5": [
+        {
+          "category": "Player",
+          "name": "Invincibility",
+          "description": "Activate to become invulnerable to all damage for 5 minutes.",
+          "code": "RIGHT, A, RIGHT, LEFT, RIGHT, RB, RIGHT, LEFT, A, Y",
+          "type": "button"
+        },
+        {
+          "category": "Player",
+          "name": "Max Health and Armor",
+          "description": "Instantly restores your health and armor to maximum levels.",
+          "code": "B, LB, Y, RT, A, X, B, RIGHT, X, LB, LB, LB",
+          "type": "button"
+        },
+        {
+          "category": "Player",
+          "name": "Super Jump",
+          "description": "Instantly restores your health and armor to maximum levels.",
+          "code": "LEFT, LEFT, Y, Y, RIGHT, RIGHT, LEFT, RIGHT, X, RB, RT",
+          "type": "button"
+        },
+        {
+          "category": "World",
+          "name": "Moon Gravity",
+          "description": "Experience low gravity physics.",
+          "code": "LEFT, LEFT, LB, RB, LB, RIGHT, LEFT, LB, LEFT",
+          "type": "button"
+        },
+        {
+          "category": "World",
+          "name": "Raise Wanted Level",
+          "description": "Increase your wanted level by one star.",
+          "code": "RB, RB, B, RT, LEFT, RIGHT, LEFT, RIGHT, LEFT, RIGHT",
+          "type": "button"
+        },
+        {
+          "category": "World",
+          "name": "Lower Wanted Level",
+          "description": "Decrease your wanted level by one star.",
+          "code": "RB, RB, B, RT, RIGHT, LEFT, RIGHT, LEFT, RIGHT, LEFT",
+          "type": "button"
+        },
+        {
+          "category": "Player",
+          "name": "Fast Run",
+          "description": "Run faster than normal.",
+          "code": "Y, LEFT, RIGHT, RIGHT, LT, LB, X",
+          "type": "button"
+        },
+        {
+          "category": "Player",
+          "name": "Fast Swim",
+          "description": "Swim faster than normal.",
+          "code": "LEFT, LEFT, LB, RIGHT, RIGHT, RT, LEFT, LT, RIGHT",
+          "type": "button"
+        },
+        {
+          "category": "Player",
+          "name": "Recharge Ability",
+          "description": "Instantly refill your special ability meter.",
+          "code": "A, A, X, RB, LB, A, RIGHT, LEFT, A",
+          "type": "button"
+        },
+        {
+          "category": "Player",
+          "name": "Give Parachute",
+          "description": "Get a parachute if you don't have one.",
+          "code": "LEFT, RIGHT, LB, LT, RB, RT, RT, LEFT, LEFT, RIGHT, LB",
+          "type": "button"
+        },
+        {
+          "category": "World",
+          "name": "Skyfall",
+          "description": "Spawn mid-air and freefall to the ground.",
+          "code": "LB, LT, RB, RT, LEFT, RIGHT, LEFT, RIGHT, LB, LT, RB, RT, LEFT, RIGHT, LEFT, RIGHT",
+          "type": "button"
+        },
+        {
+          "category": "Player",
+          "name": "Explosive Melee Attacks",
+          "description": "Make melee attacks explosive.",
+          "code": "RIGHT, LEFT, A, Y, RB, B, B, B, LT",
+          "type": "button"
+        },
+        {
+          "category": "Player",
+          "name": "Bang Bang (Explosive Bullets)",
+          "description": "Make your bullets explosive.",
+          "code": "RIGHT, X, A, LEFT, RB, RT, LEFT, RIGHT, RIGHT, LB, LB, LB",
+          "type": "button"
+        },
+        {
+          "category": "Player",
+          "name": "Flaming Bullets",
+          "description": "Make your bullets set things on fire.",
+          "code": "LB, RB, X, RB, LEFT, RT, RB, LEFT, X, RIGHT, LB, LB",
+          "type": "button"
+        },
+        {
+          "category": "Player",
+          "name": "Slow Motion Aim",
+          "description": "Slow down time when aiming.",
+          "code": "X, LT, RB, Y, LEFT, X, LT, RIGHT, A",
+          "type": "button"
+        },
+        {
+          "category": "Player",
+          "name": "Drunk Mode",
+          "description": "Make your character drunk.",
+          "code": "Y, RIGHT, RIGHT, LEFT, RIGHT, X, B, LEFT",
+          "type": "button"
+        },
+        {
+          "category": "World",
+          "name": "Change Weather",
+          "description": "Cycle through different weather types.",
+          "code": "RT, A, LB, LB, LT, LT, LT, X",
+          "type": "button"
+        },
+        {
+          "category": "World",
+          "name": "Slidey Cars",
+          "description": "Reduce car traction.",
+          "code": "Y, RB, RB, LEFT, RB, LB, RT, LB",
+          "type": "button"
+        },
+        {
+          "category": "World",
+          "name": "Slow Motion",
+          "description": "Slow down game speed.",
+          "code": "Y, LEFT, RIGHT, RIGHT, X, RT, RB",
+          "type": "button"
+        },
+        {
+          "category": "Vehicles",
+          "name": "Spawn Buzzard Attack Helicopter",
+          "description": "Spawn a Buzzard attack helicopter.",
+          "code": "B, B, LB, B, B, B, LB, LT, RB, Y, B, Y",
+          "type": "button"
+        },
+        {
+          "category": "Vehicles",
+          "name": "Spawn Comet",
+          "description": "Spawn a Comet sports car.",
+          "code": "RB, B, RT, RIGHT, LB, LT, A, A, X, RB",
+          "type": "button"
+        },
+        {
+          "category": "Vehicles",
+          "name": "Spawn Sanchez",
+          "description": "Spawn a Sanchez dirt bike.",
+          "code": "B, A, LB, B, B, LB, B, RB, RT, LT, LB, LB",
+          "type": "button"
+        },
+        {
+          "category": "Vehicles",
+          "name": "Spawn Trashmaster",
+          "description": "Spawn a Trashmaster garbage truck.",
+          "code": "B, RB, B, RB, LEFT, LEFT, RB, LB, B, RIGHT",
+          "type": "button"
+        },
+        {
+          "category": "Vehicles",
+          "name": "Spawn Limo",
+          "description": "Spawn a limousine.",
+          "code": "RT, RIGHT, LT, LEFT, LEFT, RB, LB, B, RIGHT",
+          "type": "button"
+        },
+        {
+          "category": "Vehicles",
+          "name": "Spawn Stunt Plane",
+          "description": "Spawn a Stunt Plane.",
+          "code": "B, RIGHT, LB, LT, LEFT, RB, LB, LB, LEFT, LEFT, A, Y",
+          "type": "button"
+        },
+        {
+          "category": "Vehicles",
+          "name": "Spawn Caddy",
+          "description": "Spawn a golf cart (Caddy).",
+          "code": "B, LB, LEFT, RB, LT, A, RB, LB, B, A",
+          "type": "button"
+        },
+        {
+          "category": "Vehicles",
+          "name": "Spawn Rapid GT",
+          "description": "Spawn a Rapid GT sports car.",
+          "code": "RT, LB, B, RIGHT, LB, RB, RIGHT, LEFT, B, RT",
+          "type": "button"
+        },
+        {
+          "category": "Vehicles",
+          "name": "Spawn Duster",
+          "description": "Spawn a crop duster plane.",
+          "code": "RIGHT, LEFT, RB, RB, RB, LEFT, Y, Y, A, B, LB, LB",
+          "type": "button"
+        },
+        {
+          "category": "Vehicles",
+          "name": "Spawn PCJ-600 Motorcycle",
+          "description": "Spawn a PCJ-600 motorcycle.",
+          "code": "RB, RIGHT, LEFT, RIGHT, RT, LEFT, RIGHT, X, RIGHT, LT, LB, LB",
+          "type": "button"
+        },
+        {
+          "category": "Vehicles",
+          "name": "Spawn BMX",
+          "description": "Spawn a BMX bike.",
+          "code": "LEFT, LEFT, RIGHT, RIGHT, LEFT, RIGHT, X, B, Y, RB, RT",
+          "type": "button"
+        }
+      ],
+      "RedDeadRedemption2": []
+    },
+    "PC": {
+      "GTA5": [
+        {
+          "category": "Player",
+          "name": "Invincibility",
+          "description": "Activate to become invulnerable to all damage for 5 minutes.",
+          "code": "PAINKILLER",
+          "type": "keyboard"
+        },
+        {
+          "category": "Player",
+          "name": "Max Health and Armor",
+          "description": "Instantly restores your health and armor to maximum levels.",
+          "code": " TURTLE",
+          "type": "keyboard"
+        },
+        {
+          "category": "Player",
+          "name": "Super Jump",
+          "description": "Instantly restores your health and armor to maximum levels.",
+          "code": "HOPTOIT",
+          "type": "keyboard"
+        },
+        {
+          "category": "World",
+          "name": "Moon Gravity",
+          "description": "Experience low gravity physics.",
+          "code": "FLOATER",
+          "type": "keyboard"
+        },
+        {
+          "category": "World",
+          "name": "Raise Wanted Level",
+          "description": "Increase your wanted level by one star.",
+          "code": "FUGITIVE",
+          "type": "keyboard"
+        },
+        {
+          "category": "World",
+          "name": "Lower Wanted Level",
+          "description": "Decrease your wanted level by one star.",
+          "code": "LAWYERUP",
+          "type": "keyboard"
+        },
+        {
+          "category": "Player",
+          "name": "Fast Run",
+          "description": "Run faster than normal.",
+          "code": "CATCHME",
+          "type": "keyboard"
+        },
+        {
+          "category": "Player",
+          "name": "Fast Swim",
+          "description": "Swim faster than normal.",
+          "code": "GOTGILLS",
+          "type": "keyboard"
+        },
+        {
+          "category": "Player",
+          "name": "Recharge Ability",
+          "description": "Instantly refill your special ability meter.",
+          "code": "POWERUP",
+          "type": "keyboard"
+        },
+        {
+          "category": "Player",
+          "name": "Give Parachute",
+          "description": "Get a parachute if you don't have one.",
+          "code": "SKYDIVE",
+          "type": "keyboard"
+        },
+        {
+          "category": "World",
+          "name": "Skyfall",
+          "description": "Spawn mid-air and freefall to the ground.",
+          "code": "SKYFALL",
+          "type": "keyboard"
+        },
+        {
+          "category": "Player",
+          "name": "Explosive Melee Attacks",
+          "description": "Make melee attacks explosive.",
+          "code": "HOTHANDS",
+          "type": "keyboard"
+        },
+        {
+          "category": "Player",
+          "name": "Bang Bang (Explosive Bullets)",
+          "description": "Make your bullets explosive.",
+          "code": "HIGHEX",
+          "type": "keyboard"
+        },
+        {
+          "category": "Player",
+          "name": "Flaming Bullets",
+          "description": "Make your bullets set things on fire.",
+          "code": "INCENDIARY",
+          "type": "keyboard"
+        },
+        {
+          "category": "Player",
+          "name": "Slow Motion Aim",
+          "description": "Slow down time when aiming.",
+          "code": "DEADEYE",
+          "type": "keyboard"
+        },
+        {
+          "category": "Player",
+          "name": "Drunk Mode",
+          "description": "Make your character drunk.",
+          "code": "LIQUOR",
+          "type": "keyboard"
+        },
+        {
+          "category": "World",
+          "name": "Change Weather",
+          "description": "Cycle through different weather types.",
+          "code": "MAKEITRAIN",
+          "type": "keyboard"
+        },
+        {
+          "category": "World",
+          "name": "Slidey Cars",
+          "description": "Reduce car traction.",
+          "code": "SNOWDAY",
+          "type": "keyboard"
+        },
+        {
+          "category": "World",
+          "name": "Slow Motion",
+          "description": "Slow down game speed.",
+          "code": "SLOWMO",
+          "type": "keyboard"
+        },
+        {
+          "category": "Vehicles",
+          "name": "Spawn Buzzard Attack Helicopter",
+          "description": "Spawn a Buzzard attack helicopter.",
+          "code": "BUZZOFF",
+          "type": "keyboard"
+        },
+        {
+          "category": "Vehicles",
+          "name": "Spawn Comet",
+          "description": "Spawn a Comet sports car.",
+          "code": "OMET",
+          "type": "keyboard"
+        },
+        {
+          "category": "Vehicles",
+          "name": "Spawn Sanchez",
+          "description": "Spawn a Sanchez dirt bike.",
+          "code": "OFFROAD",
+          "type": "keyboard"
+        },
+        {
+          "category": "Vehicles",
+          "name": "Spawn Trashmaster",
+          "description": "Spawn a Trashmaster garbage truck.",
+          "code": "TRASHED",
+          "type": "keyboard"
+        },
+        {
+          "category": "Vehicles",
+          "name": "Spawn Limo",
+          "description": "Spawn a limousine.",
+          "code": "VINEWOOD",
+          "type": "keyboard"
+        },
+        {
+          "category": "Vehicles",
+          "name": "Spawn Stunt Plane",
+          "description": "Spawn a Stunt Plane.",
+          "code": "BARNSTORM",
+          "type": "keyboard"
+        },
+        {
+          "category": "Vehicles",
+          "name": "Spawn Caddy",
+          "description": "Spawn a golf cart (Caddy).",
+          "code": "HOLEIN1",
+          "type": "keyboard"
+        },
+        {
+          "category": "Vehicles",
+          "name": "Spawn Rapid GT",
+          "description": "Spawn a Rapid GT sports car.",
+          "code": "RAPIDGT",
+          "type": "keyboard"
+        },
+        {
+          "category": "Vehicles",
+          "name": "Spawn Duster",
+          "description": "Spawn a crop duster plane.",
+          "code": "FLYSPRAY",
+          "type": "keyboard"
+        },
+        {
+          "category": "Vehicles",
+          "name": "Spawn PCJ-600 Motorcycle",
+          "description": "Spawn a PCJ-600 motorcycle.",
+          "code": "ROCKET",
+          "type": "keyboard"
+        },
+        {
+          "category": "Vehicles",
+          "name": "Spawn BMX",
+          "description": "Spawn a BMX bike.",
+          "code": "BANDIT",
+          "type": "keyboard"
+        }
+      ],
+      "RedDeadRedemption2": []
+    }
+  }
+}
