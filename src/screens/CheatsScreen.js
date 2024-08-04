@@ -56,21 +56,23 @@ const CheatsScreen = ({ route }) => {
     []
   );
 
-  // Function to convert button text to image components
-  const renderButtonCode = (code) => {
-    const images = platform === "Xbox" ? xboxImages : playstationImages;
+  const renderCheatCode = (code) => {
+    if (platform === "PC") {
+      return <Text style={styles.cheatCode}>{code}</Text>;
+    } else {
+      const images = platform === "Xbox" ? xboxImages : playstationImages;
 
-    const buttons = code
-      .split(", ")
-      .map((buttonText, index) => (
-        <Image
-          key={index}
-          source={images[buttonText]}
-          style={styles.buttonImage}
-        />
-      ));
-
-    return <View style={styles.buttonContainer}>{buttons}</View>;
+      const buttons = code
+        .split(", ")
+        .map((buttonText, index) => (
+          <Image
+            key={index}
+            source={images[buttonText]}
+            style={styles.buttonImage}
+          />
+        ));
+      return <View style={styles.buttonContainer}>{buttons}</View>;
+    }
   };
 
   const clearSearch = useCallback(() => {
@@ -103,8 +105,11 @@ const CheatsScreen = ({ route }) => {
             {item[1].map((cheat) => (
               <View key={cheat.name} style={styles.cheatContainer}>
                 <Text style={styles.cheatName}>{cheat.name}</Text>
+                <TouchableOpacity style={styles.wishListWrapper}>
+                  <Icon name="heart-outline" size={25} color="#fff" />
+                </TouchableOpacity>
                 <Text style={styles.cheatDescription}>{cheat.description}</Text>
-                {renderButtonCode(cheat.code)}
+                {renderCheatCode(cheat.code)}
               </View>
             ))}
           </View>
@@ -165,6 +170,12 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.1,
     shadowRadius: 3,
   },
+  wishListWrapper: {
+    position: "absolute",
+    top: 15,
+    right: 15,
+    flexDirection: "row",
+  },
   cheatName: {
     fontSize: 20,
     fontWeight: "bold",
@@ -174,6 +185,11 @@ const styles = StyleSheet.create({
     fontSize: 14,
     marginVertical: 5,
     color: "#d8ebde",
+  },
+  cheatCode: {
+    fontSize: 16,
+    color: Colors.text,
+    fontStyle: "italic",
   },
   buttonContainer: {
     flexDirection: "row",
