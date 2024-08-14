@@ -14,11 +14,13 @@ import cheatsData from "../constants/cheats.json";
 import Icon from "react-native-vector-icons/Ionicons";
 
 import { playstationImages, xboxImages } from "../constants/buttonImages";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const CheatsScreen = ({ route }) => {
   const { platform, game } = route.params;
   const [cheats, setCheats] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
+  const [favorites, setFavorites] = useState({});
 
   useEffect(() => {
     if (
@@ -37,6 +39,35 @@ const CheatsScreen = ({ route }) => {
     acc[cheat.category].push(cheat);
     return acc;
   }, {});
+
+  useEffect(() => {
+    loadFavorites();
+  }, []);
+
+  const loadFavorites = async () => {
+    try {
+      const jsonValue = await AsyncStorage.getItem(`favorites_${platform}`);
+      const loadedFavorites = jsonValue != null ? JSON.parse(jsonValue) : {};
+      setFavorites(loadedFavorites);
+    } catch (error) {
+      console.error("Failed to load favorites.", error);
+    }
+  };
+
+  const toggleFavorite = async (cheatName) => {
+    const updatedFavorites = {
+      ...favorites,
+      [cheatName]: !favorites[cheatName],
+    };
+    setFavorites(updatedFavorites);
+
+    try {
+      const jsonValue = JSON.stringify(updatedFavorites);
+      await AsyncStorage.setItem(`favorites_${platform}`, jsonValue);
+    } catch (e) {
+      console.error("Failed to save favorite.", e);
+    }
+  };
 
   // Filtered cheats based on search query
   const filteredGroupedCheats = Object.entries(groupedCheats).reduce(
@@ -101,12 +132,21 @@ const CheatsScreen = ({ route }) => {
         keyExtractor={(item) => item[0]}
         renderItem={({ item }) => (
           <View style={styles.categoryContainer}>
-            <Text style={styles.categoryTitle}>{item[0]}</Text>
+            <View style={styles.categoryTitleWrapper}>
+              <Text style={styles.categoryTitle}>{item[0]}</Text>
+            </View>
             {item[1].map((cheat) => (
               <View key={cheat.name} style={styles.cheatContainer}>
                 <Text style={styles.cheatName}>{cheat.name}</Text>
-                <TouchableOpacity style={styles.wishListWrapper}>
-                  <Icon name="heart-outline" size={25} color="#fff" />
+                <TouchableOpacity
+                  style={styles.wishListWrapper}
+                  onPress={() => toggleFavorite(cheat.name)}
+                >
+                  <Icon
+                    name={favorites[cheat.name] ? "heart" : "heart-outline"}
+                    size={25}
+                    color="red"
+                  />
                 </TouchableOpacity>
                 <Text style={styles.cheatDescription}>{cheat.description}</Text>
                 {renderCheatCode(cheat.code)}
@@ -152,11 +192,19 @@ const styles = StyleSheet.create({
   categoryContainer: {
     marginBottom: 20,
   },
+  categoryTitleWrapper: {
+    width: "100%",
+    backgroundColor: "gray",
+    padding: 10,
+    marginBottom: 10,
+    borderWidth: 2,
+    borderColor: "gray",
+  },
   categoryTitle: {
     fontSize: 20,
     fontWeight: "bold",
-    marginBottom: 10,
-    color: Colors.primary,
+    // marginBottom: 10,
+    color: Colors.text,
   },
   cheatContainer: {
     marginBottom: 15,

@@ -17,13 +17,13 @@ import {
   clearAll,
 } from "../constants/dataManipulation";
 
-const WelcomeScreen = ({ navigation }) => {
+const WelcomeScreen = ({ onNavigateToCheats }) => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Welcome to GTA5 Cheats</Text>
       <Button
         title="View Cheats"
-        onPress={() => navigation.navigate("Cheats")}
+        onPress={onNavigateToCheats}
         color={Colors.primary}
       />
     </View>

@@ -48,7 +48,16 @@ export default function App() {
         </View>
       )}
 
-      {isFirstVisit ? <WelcomeScreen /> : <MainNavigator />}
+      {isFirstVisit ? (
+        <WelcomeScreen
+          onNavigateToCheats={() => {
+            setIsFirstVisit(false);
+            NavigationContainer.navigate("Cheats");
+          }}
+        />
+      ) : (
+        <MainNavigator />
+      )}
     </NavigationContainer>
   );
 }
