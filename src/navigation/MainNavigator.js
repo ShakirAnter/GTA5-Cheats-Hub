@@ -53,7 +53,13 @@ const MainNavigator = () => {
       <Tab.Screen
         name="Favorites"
         component={FavoritesScreen}
-        options={{ headerShown: false }}
+        options={{
+          headerShown: true,
+          headerStyle: {
+            backgroundColor: Colors.primary,
+          },
+          headerTintColor: Colors.text,
+        }}
       />
       <Tab.Screen
         name="About"
